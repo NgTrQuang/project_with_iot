@@ -1,0 +1,20 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Chiều cao toàn màn hình */
+  }
+  
+  .layout-body {
+    display: flex;
+    flex: 1; /* Chiếm toàn bộ không gian còn lại */
+  }
+  
+  .layout-content {
+    flex-grow: 1; /* Chiếm toàn bộ không gian còn lại */
+    margin-left: 250px; /* Chừa 250px cho Sidebar */
+    padding: 16px;
+    background-color: #fff;
+    overflow-y: auto; /* Kích hoạt cuộn dọc nếu cần */
+  }
+  
+  

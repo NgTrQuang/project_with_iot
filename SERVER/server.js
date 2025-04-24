@@ -19,22 +19,27 @@ connectDB();
 
 const app = express();
 
-const allowedOrigins = ['http://localhost:3001'];
+const allowedOrigins = ['https://project-with-iot.onrender.com', 'http://localhost:3001'];
 
 app.use(express.json());
 app.use(cookieParser());
 
 // Chỉ bật CORS trong môi trường phát triển
-if (process.env.NODE_ENV !== 'production') {
-  app.use(cors({
-    origin: allowedOrigins, // Chỉ định frontend
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Chỉ cho phép các phương thức cần thiết
-    allowedHeaders: ['Content-Type', 'Authorization'], // Chỉ các header cần thiết
-    // exposedHeaders: ['Content-Length'], // Các header có thể được truy cập từ frontend
-    credentials: true, // Nếu sử dụng cookie
-    // optionsSuccessStatus: 200 // Mã trạng thái cho preflight requests
-  }));
-}
+app.use(cors({
+  origin: function (origin, callback) {
+    // Cho phép nếu origin nằm trong danh sách hoặc không có origin (vd: curl, Postman)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Chỉ cho phép các phương thức cần thiết
+  allowedHeaders: ['Content-Type', 'Authorization'], // Chỉ các header cần thiết
+  // exposedHeaders: ['Content-Length'], // Các header có thể được truy cập từ frontend
+  credentials: true, // Nếu sử dụng cookie
+  // optionsSuccessStatus: 200 // Mã trạng thái cho preflight requests
+}));
 
 // Định nghĩa các route
 app.use('/api/auth', authRoutes);
@@ -62,6 +67,6 @@ if (process.env.NODE_ENV === 'production') {
 
 // Start server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {                    //  '0.0.0.0',
+app.listen(PORT, '0.0.0.0', () => {                    //  '0.0.0.0',
   console.log(`Server running on http://localhost:${PORT}`);
 });

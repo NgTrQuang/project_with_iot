@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf3a"
+  },
+  "rateType": "tiered",
+  "tiers": [
+    {
+      "range": [
+        0,
+        50
+      ],
+      "rate": 1893,
+      "_id": {
+        "$oid": "677e2f73274e5ef4b60abf3b"
+      }
+    },
+    {
+      "range": [
+        51,
+        100
+      ],
+      "rate": 1956,
+      "_id": {
+        "$oid": "677e2f73274e5ef4b60abf3c"
+      }
+    },
+    {
+      "range": [
+        101,
+        200
+      ],
+      "rate": 2271,
+      "_id": {
+        "$oid": "677e2f73274e5ef4b60abf3d"
+      }
+    },
+    {
+      "range": [
+        201,
+        300
+      ],
+      "rate": 2860,
+      "_id": {
+        "$oid": "677e2f73274e5ef4b60abf3e"
+      }
+    },
+    {
+      "range": [
+        301,
+        400
+      ],
+      "rate": 3197,
+      "_id": {
+        "$oid": "677e2f73274e5ef4b60abf3f"
+      }
+    },
+    {
+      "range": [
+        401,
+        {
+          "$numberDouble": "Infinity"
+        }
+      ],
+      "rate": 3302,
+      "_id": {
+        "$oid": "677e2f73274e5ef4b60abf40"
+      }
+    }
+  ],
+  "billingCycleEnd": {
+    "$date": "2025-01-30T17:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-08T07:55:31.168Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T07:55:31.168Z"
+  },
+  "__v": 0
+}]

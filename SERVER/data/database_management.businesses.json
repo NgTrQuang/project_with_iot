@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf36"
+  },
+  "businessName": "HPK Việt Nam",
+  "taxId": "2100670435",
+  "address": "số 145, đường Điện Biên Phủ, Khóm 1, phường 6, Trà Vinh",
+  "phoneNumber": "0981131368",
+  "email": "hpkvietnam@gmail.com",
+  "electricityRate": null,
+  "waterRate": null,
+  "bankAccount": null,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-01-08T07:55:31.140Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T07:55:31.140Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf37"
+  },
+  "businessName": "Trọ sinh viên",
+  "taxId": "2100633036",
+  "address": "số 44, đường Kiên Thị Nhẫn, Khóm 1, phường 6, Trà Vinh",
+  "phoneNumber": "0703030605",
+  "email": "trosinhvien@gmail.com",
+  "electricityRate": null,
+  "waterRate": null,
+  "bankAccount": null,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-01-08T07:55:31.140Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T07:55:31.140Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "businessName": "Nhà trọ sinh viên",
+  "taxId": "21345679910",
+  "address": "hẻm 114, đường Kiên Thị Nhẫn, khóm 1, phường 6, Trà Vinh",
+  "phoneNumber": "0379909081",
+  "email": "nguyentriquang23@gmail.com",
+  "electricityRate": null,
+  "waterRate": null,
+  "businessManager": {
+    "$oid": "677e2ffb145dc1bd2583efee"
+  },
+  "bankAccount": null,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-01-08T07:57:47.637Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T07:57:47.756Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,475 @@
+[{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf46"
+  },
+  "username": "superadmin",
+  "email": "superadmin@gmail.com",
+  "password": "$2a$10$PLQJVnZFe0kbMfkrOLGzS.YLTZm26fJTbGAaueulG85K.e7/OAbqi",
+  "fullName": "Super Admin",
+  "address": "số 145, đường Điện Biên Phủ, Khóm 1, phường 6, Trà Vinh",
+  "phoneNumber": "0335621047",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf22"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "avatar": "https://via.placeholder.com/40?text=SA",
+  "gender": "male",
+  "type": "individual",
+  "business": {
+    "$oid": "677e2f73274e5ef4b60abf36"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": null,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-01-08T07:55:31.419Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-04T06:56:44.458Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf47"
+  },
+  "username": "admin",
+  "email": "admin@gmail.com",
+  "password": "$2a$10$PLQJVnZFe0kbMfkrOLGzS.YLTZm26fJTbGAaueulG85K.e7/OAbqi",
+  "fullName": "Admin",
+  "address": "số 145, đường Điện Biên Phủ, Khóm 1, phường 6, Trà Vinh",
+  "phoneNumber": "0379909081",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf23"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "avatar": "https://via.placeholder.com/40?text=A",
+  "gender": "male",
+  "type": "individual",
+  "business": {
+    "$oid": "677e2f73274e5ef4b60abf36"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": null,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-01-08T07:55:31.419Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-04T07:12:40.005Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf48"
+  },
+  "username": "admin2",
+  "email": "admin2@gmail.com",
+  "password": "$2a$10$PLQJVnZFe0kbMfkrOLGzS.YLTZm26fJTbGAaueulG85K.e7/OAbqi",
+  "fullName": "Admin2",
+  "address": "số 145, đường Điện Biên Phủ, Khóm 1, phường 6, Trà Vinh",
+  "phoneNumber": "0344220017",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf23"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "avatar": "https://via.placeholder.com/40?text=A",
+  "gender": "female",
+  "type": "individual",
+  "business": {
+    "$oid": "677e2f73274e5ef4b60abf36"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": null,
+  "deletedAt": null,
+  "createdAt": {
+    "$date": "2025-01-08T07:55:31.419Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T07:55:31.419Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2ffb145dc1bd2583efee"
+  },
+  "username": "21345679910",
+  "email": "nhatrosinhvien@gmail.com",
+  "password": "$2a$10$IrsE3dfZZlNcMoLX48Gjm.P3iO3qpxPJED0ZTTN9ZmDNa8x18l2zS",
+  "fullName": "Ta Là Chủ Trọ",
+  "address": "hẻm 114, đường Kiên Thị Nhẫn, Phường 1, Thành phố Trà Vinh, Tỉnh Trà Vinh",
+  "phoneNumber": "0379909081",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf24"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "gender": "male",
+  "type": "business_user",
+  "business": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": null,
+  "deletedAt": null,
+  "avatar": "https://via.placeholder.com/40?text=M",
+  "createdAt": {
+    "$date": "2025-01-08T07:57:47.653Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-04T06:59:31.193Z"
+  },
+  "trialExpirationDate": {
+    "$date": "2026-01-08T07:57:47.654Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e3089145dc1bd2583f0b2"
+  },
+  "username": "chauchutro",
+  "email": "chauchutro@gmail.com",
+  "password": "$2a$10$d3wN2jcloZqTghW8ifXhlu62KefknJBGupz2cI5IqqttytqFNDB4K",
+  "fullName": "Ta Là Cháu Của Chủ Trọ",
+  "address": "Ninh Kieu, Can Tho",
+  "phoneNumber": "0379909081",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf25"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "gender": "female",
+  "type": "business_user",
+  "business": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": {
+    "$oid": "677e2ffb145dc1bd2583efee"
+  },
+  "trialExpirationDate": {
+    "$date": "2026-01-08T07:57:47.654Z"
+  },
+  "deletedAt": null,
+  "avatar": "https://via.placeholder.com/40?text=M",
+  "createdAt": {
+    "$date": "2025-01-08T08:00:09.226Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-04T02:30:42.774Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e3235145dc1bd2583f218"
+  },
+  "username": "quang",
+  "email": "nguyentriquang23@gmail.com",
+  "password": "$2a$10$PLQJVnZFe0kbMfkrOLGzS.YLTZm26fJTbGAaueulG85K.e7/OAbqi",
+  "fullName": "Quang Nguyen",
+  "address": "Ninh Kieu, Can Tho",
+  "phoneNumber": "0379909081",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf26"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "gender": "male",
+  "type": "business_user",
+  "business": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2UzMjM1MTQ1ZGMxYmQyNTgzZjIxOCIsInJvbGUiOjAsImlhdCI6MTc0NTM3NDMwNSwiZXhwIjoxNzQ1NjMzNTA1fQ.5tPMfqux6i9QrY8ugXYIylrTnVzpb4Q1ywU_hnesb4c",
+  "bankAccount": null,
+  "createdBy": {
+    "$oid": "677e3089145dc1bd2583f0b2"
+  },
+  "trialExpirationDate": {
+    "$date": "2026-01-08T07:57:47.654Z"
+  },
+  "deletedAt": null,
+  "avatar": "https://via.placeholder.com/40?text=M",
+  "createdAt": {
+    "$date": "2025-01-08T08:07:17.723Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-23T02:11:45.365Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e3258145dc1bd2583f21f"
+  },
+  "username": "thoai",
+  "email": "nguyenthoai@gmail.com",
+  "password": "$2a$10$M5yCZIQAUq18z8ldosmw9.oW0uPJft4NNfDNP9AZSzuBgXB9woUfi",
+  "fullName": "Thoai Nguyen",
+  "address": "Ninh Kieu, Can Tho",
+  "phoneNumber": "0379909082",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf26"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "gender": "male",
+  "type": "business_user",
+  "business": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": {
+    "$oid": "677e3089145dc1bd2583f0b2"
+  },
+  "trialExpirationDate": {
+    "$date": "2026-01-08T07:57:47.654Z"
+  },
+  "deletedAt": null,
+  "avatar": "https://via.placeholder.com/40?text=M",
+  "createdAt": {
+    "$date": "2025-01-08T08:07:52.003Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T08:07:52.003Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e3d53dbce0c5eeddd6e91"
+  },
+  "username": "chillgay123",
+  "email": "chillgaycute@gmail.com",
+  "password": "$2a$10$rzLn7eS87JEV58RVxZE8RuicN7ZomQb5aUembXPGPatRjkmAA/RsS",
+  "fullName": "chillgay cute",
+  "address": "An Nghiệp, Cần Thơ",
+  "phoneNumber": "0379909081",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf26"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "gender": "male",
+  "type": "business_user",
+  "business": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": {
+    "$oid": "677e2f73274e5ef4b60abf46"
+  },
+  "trialExpirationDate": {
+    "$date": "2026-01-08T07:57:47.654Z"
+  },
+  "deletedAt": null,
+  "avatar": "https://via.placeholder.com/40?text=M",
+  "createdAt": {
+    "$date": "2025-01-08T08:54:43.948Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T08:55:44.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e47ce8697dff0a9762e81"
+  },
+  "username": "user1",
+  "email": "user1@example.com",
+  "password": "123456",
+  "fullName": "User One",
+  "address": "Address One",
+  "phoneNumber": "1234567890",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf26"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "gender": "male",
+  "type": "business_user",
+  "business": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": {
+    "$oid": "677e2ffb145dc1bd2583efee"
+  },
+  "trialExpirationDate": {
+    "$date": "2026-01-08T07:57:47.654Z"
+  },
+  "deletedAt": null,
+  "avatar": "https://via.placeholder.com/40?text=M",
+  "createdAt": {
+    "$date": "2025-01-08T09:39:26.654Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T09:39:26.655Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e47ce8697dff0a9762e82"
+  },
+  "username": "user2",
+  "email": "user2@example.com",
+  "password": "123456",
+  "fullName": "User Two",
+  "address": "Address Two",
+  "phoneNumber": "987654321",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf26"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "gender": "female",
+  "type": "business_user",
+  "business": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": {
+    "$oid": "677e2ffb145dc1bd2583efee"
+  },
+  "trialExpirationDate": {
+    "$date": "2026-01-08T07:57:47.654Z"
+  },
+  "deletedAt": null,
+  "avatar": "https://via.placeholder.com/40?text=F",
+  "createdAt": {
+    "$date": "2025-01-08T09:39:26.655Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T09:39:26.655Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e4c046491e7dcabf226ba"
+  },
+  "username": "user3",
+  "email": "user3@example.com",
+  "password": "123456",
+  "fullName": "User Three",
+  "address": "Address Three",
+  "phoneNumber": "0123456789",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf26"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "gender": "male",
+  "type": "business_user",
+  "business": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": {
+    "$oid": "677e2ffb145dc1bd2583efee"
+  },
+  "trialExpirationDate": {
+    "$date": "2026-01-08T07:57:47.654Z"
+  },
+  "deletedAt": null,
+  "avatar": "https://via.placeholder.com/40?text=M",
+  "createdAt": {
+    "$date": "2025-01-08T09:57:24.156Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T09:57:24.156Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e4c046491e7dcabf226bb"
+  },
+  "username": "user4",
+  "email": "user4@example.com",
+  "password": "123456",
+  "fullName": "User Four",
+  "address": "Address Four",
+  "phoneNumber": "0987654321",
+  "electricityRate": null,
+  "waterRate": null,
+  "role": {
+    "$oid": "677e2f73274e5ef4b60abf26"
+  },
+  "permissions": [],
+  "isDisabled": false,
+  "isDeleted": false,
+  "gender": "female",
+  "type": "business_user",
+  "business": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "token": null,
+  "bankAccount": null,
+  "createdBy": {
+    "$oid": "677e2ffb145dc1bd2583efee"
+  },
+  "trialExpirationDate": {
+    "$date": "2026-01-08T07:57:47.654Z"
+  },
+  "deletedAt": null,
+  "avatar": "https://via.placeholder.com/40?text=F",
+  "createdAt": {
+    "$date": "2025-01-08T09:57:24.157Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T09:57:24.157Z"
+  },
+  "__v": 0
+}]

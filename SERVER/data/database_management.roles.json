@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf22"
+  },
+  "code": 1,
+  "name": "Quản trị tối cao",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf23"
+  },
+  "code": 2,
+  "name": "Quản trị viên",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf24"
+  },
+  "code": 3,
+  "name": "Giám đốc",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf25"
+  },
+  "code": 4,
+  "name": "Quản lý/Trưởng phòng",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf26"
+  },
+  "code": 0,
+  "name": "Khách hàng",
+  "__v": 0
+}]

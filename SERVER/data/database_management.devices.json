@@ -1,0 +1,124 @@
+[{
+  "_id": {
+    "$oid": "677f2c748180c0740f9d9bca"
+  },
+  "deviceSerialNumber": "EM113",
+  "deviceName": "Electricity Meter 113",
+  "userId": {
+    "$oid": "677e3235145dc1bd2583f218"
+  },
+  "businessId": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "deviceType": "electricity_meter",
+  "deviceStatus": "active",
+  "wifiStatus": "connected",
+  "location": "123 Main St, City",
+  "coordinates": [
+    106.700981,
+    10.77689
+  ],
+  "lastMaintenance": {
+    "$date": "2025-01-09T01:55:00.461Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-09T01:55:00.461Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-09T01:55:00.461Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677f2c748180c0740f9d9bcb"
+  },
+  "deviceSerialNumber": "WE104",
+  "deviceName": "Water Meter 104",
+  "userId": {
+    "$oid": "677e3258145dc1bd2583f21f"
+  },
+  "businessId": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "deviceType": "water_meter",
+  "deviceStatus": "under_maintenance",
+  "wifiStatus": "disconnected",
+  "location": "456 Elm St, City",
+  "coordinates": [
+    106.800981,
+    10.87689
+  ],
+  "lastMaintenance": {
+    "$date": "2025-01-09T01:55:00.462Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-09T01:55:00.462Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-09T01:55:00.462Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677f2eaa8f2d026053f271b7"
+  },
+  "deviceSerialNumber": "EM114",
+  "deviceName": "Electricity Meter 114",
+  "userId": {
+    "$oid": "677e3d53dbce0c5eeddd6e91"
+  },
+  "businessId": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "deviceType": "electricity_meter",
+  "deviceStatus": "active",
+  "wifiStatus": "connected",
+  "location": "123 Main St, City",
+  "coordinates": [
+    106.700981,
+    10.77689
+  ],
+  "lastMaintenance": {
+    "$date": "2025-01-09T02:04:26.864Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-09T02:04:26.865Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-09T02:04:26.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677f2eaa8f2d026053f271b8"
+  },
+  "deviceSerialNumber": "WE105",
+  "deviceName": "Water Meter 105",
+  "userId": {
+    "$oid": "677e47ce8697dff0a9762e81"
+  },
+  "businessId": {
+    "$oid": "677e2ffb145dc1bd2583efeb"
+  },
+  "deviceType": "water_meter",
+  "deviceStatus": "under_maintenance",
+  "wifiStatus": "disconnected",
+  "location": "456 Elm St, City",
+  "coordinates": [
+    106.800981,
+    10.87689
+  ],
+  "lastMaintenance": {
+    "$date": "2025-01-09T02:04:26.866Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-09T02:04:26.866Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-09T02:04:26.866Z"
+  },
+  "__v": 0
+}]

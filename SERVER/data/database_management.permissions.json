@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf30"
+  },
+  "name": "read",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf31"
+  },
+  "name": "write",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf32"
+  },
+  "name": "delete",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e2f73274e5ef4b60abf33"
+  },
+  "name": "manage_users",
+  "__v": 0
+}]

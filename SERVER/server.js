@@ -53,10 +53,10 @@ app.get('/health', (req, res) => {
 
 // Serve React build nếu là production
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'WEB_APP/build')));
+  app.use(express.static(path.join(__dirname, '../WEB_APP/build')));
 
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'WEB_APP', 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '../WEB_APP', 'build', 'index.html'));
   });
 }
 

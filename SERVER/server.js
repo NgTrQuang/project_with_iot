@@ -44,7 +44,7 @@ app.use(cors({
 if (process.env.NODE_ENV === 'production') {
   console.log('Running in production mode');
 }
-s
+
 // Định nghĩa các route
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);

@@ -14,7 +14,7 @@ const Login = () => {
   const [captchaValue, setCaptchaValue] = useState(null); // Giá trị CAPTCHA
   const [showPassword, setShowPassword] = useState(false);
 
-  const API_URL = process.env.REACT_APP_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -102,7 +102,7 @@ const Login = () => {
           <div className="space-y-2">
             <div>
               <label htmlFor="username" className="text-gray-600 mb-2 block">
-                Username
+                Tên đăng nhập
               </label>
               <input
                 type="text"
@@ -119,20 +119,22 @@ const Login = () => {
               <label htmlFor="password" className="text-gray-600 mb-2 block">
                 Mật khẩu
               </label>
-              <input
-                type={showPassword ? 'text' : 'password'}
-                name="password"
-                id="password"
-                className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
-                placeholder="********"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-              <i
-                onClick={() => setShowPassword(!showPassword)}  // Đổi trạng thái khi nhấn vào icon
-                className={`fa-solid ${showPassword ? 'fa-eye-slash' : 'fa-eye'} item-centers absolute right-2 top-2/3 transform -translate-y-1/2 cursor-pointer text-gray-600`}
-              ></i>
+              <div className='flex items-center'>
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  name="password"
+                  id="password"
+                  className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
+                  placeholder="********"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+                <i
+                  onClick={() => setShowPassword(!showPassword)}  // Đổi trạng thái khi nhấn vào icon
+                  className={`fa-solid ${showPassword ? 'fa-eye-slash' : 'fa-eye'} absolute right-2 transform -translate-y-1/2 cursor-pointer text-gray-600`}
+                ></i>
+              </div>
             </div>
             {/* Thêm reCAPTCHA */}
             <div className="mt-4">

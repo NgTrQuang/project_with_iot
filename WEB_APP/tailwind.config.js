@@ -9,7 +9,8 @@
 
 module.exports = {
   content: [
-    "./public/**/*.{html, js}",
+    // "./public/**/*.{html, js}",
+    "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
 
@@ -37,8 +38,8 @@ module.exports = {
   plugins: [
     require("@tailwindcss/forms"),
   ],
-  purge: {
-    enabled: process.env.NODE_ENV === 'production',
-  },
+  // purge: {
+  //   enabled: process.env.NODE_ENV === 'production',
+  // },
 };
   

@@ -19,7 +19,7 @@ connectDB();
 
 const app = express();
 
-const allowedOrigins = ['https://project-with-iot.onrender.com', 'http://localhost:3001'];
+const allowedOrigins = ['https://project-with-iot.onrender.com', 'http://localhost:5173', 'http://localhost:3001'];
 
 app.use(express.json());
 app.use(cookieParser());

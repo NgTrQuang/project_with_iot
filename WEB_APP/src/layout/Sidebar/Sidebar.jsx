@@ -62,7 +62,7 @@ const Sidebar = () => {
   const authItems = user
     ? [
         { path: '/profile', label: `Tài khoản (${user.username})`, icon: 'fa-solid fa-user' },
-        { path: '/login', label: 'Đăng xuất', icon: 'fa-solid fa-right-from-bracket', action: handleLogout },
+        { label: 'Đăng xuất', icon: 'fa-solid fa-right-from-bracket', action: handleLogout },
       ]
     : [
         { path: '/login', label: 'Đăng nhập', icon: 'fa-solid fa-right-to-bracket' },
@@ -115,19 +115,30 @@ const Sidebar = () => {
         {/* Authentication */}
         <div className="px-4 py-4 border-t">
           {authItems.map((item, index) => (
-            <NavLink
-              key={index}
-              to={item.path}
-              onClick={item.action ? item.action : undefined} // Nếu có hàm action (logout), gọi nó
-              className={({ isActive }) =>
-                `flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-100 transition ${
-                  isActive ? 'bg-gray-100 text-primary' : 'text-gray-700'
-                }`
-              }
-            >
-              <i className={`${item.icon} text-sm`}></i>
-              <span className="text-sm">{item.label}</span>
-            </NavLink>
+            item.action ? (
+              <button
+                key={index}
+                onClick={item.action}
+                className="w-full flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-100 transition text-gray-700"
+              >
+                <i className={`${item.icon} text-sm`}></i>
+                <span className="text-sm">{item.label}</span>
+              </button>
+            ) : (
+              <NavLink
+                key={index}
+                to={item.path}
+                onClick={item.action ? item.action : undefined} // Nếu có hàm action (logout), gọi nó
+                className={({ isActive }) =>
+                  `flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-100 transition ${
+                    isActive ? 'bg-gray-100 text-primary' : 'text-gray-700'
+                  }`
+                }
+              >
+                <i className={`${item.icon} text-sm`}></i>
+                <span className="text-sm">{item.label}</span>
+              </NavLink>
+            )           
           ))}
         </div>
       </div>

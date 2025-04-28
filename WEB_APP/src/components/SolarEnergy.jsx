@@ -30,7 +30,7 @@ const SolarEnergy = () => {
     console.log(`Điều khiển thiết bị ${deviceSerialNumber} sang trạng thái ${deviceStatus}`);
     
     // Ở đây ta sẽ call API đến backend để điều khiển thiết bị
-    fetch("http://localhost:3000/api/test/control-device", {
+    fetch("https://project-with-iot.onrender.com/api/test/control-device", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

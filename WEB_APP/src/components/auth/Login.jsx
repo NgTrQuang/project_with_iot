@@ -132,7 +132,7 @@ const Login = () => {
                 />
                 <i
                   onClick={() => setShowPassword(!showPassword)}  // Đổi trạng thái khi nhấn vào icon
-                  className={`fa-solid ${showPassword ? 'fa-eye-slash' : 'fa-eye'} absolute right-2 transform -translate-y-1/2 cursor-pointer text-gray-600`}
+                  className={`fa-solid ${showPassword ? 'fa-eye-slash' : 'fa-eye'} cursor-pointer text-gray-600 -ml-8`}   // top-2/3 absolute right-2 transform -translate-y-1/2 
                 ></i>
               </div>
             </div>

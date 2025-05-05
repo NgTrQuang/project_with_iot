@@ -10,7 +10,7 @@ export const UserProvider = ({ children }) => {
   
   useEffect(() => {
     fetchUser();
-  }, [userId]);
+  }, []); // userId
 
   const fetchUser = async () => {
     try {

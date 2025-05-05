@@ -21,11 +21,7 @@ const app = express();
 
 const allowedOrigins = ['https://project-with-iot.onrender.com', 'http://localhost:5173', 'http://localhost:3001'];
 
-app.use(express.json());
-app.use(cookieParser());
-
-// Chỉ bật CORS trong môi trường phát triển
-app.use(cors({
+const corsOptions = {
   origin: function (origin, callback) {
     // Cho phép nếu origin nằm trong danh sách hoặc không có origin (vd: curl, Postman)
     if (!origin || allowedOrigins.includes(origin)) {
@@ -39,7 +35,16 @@ app.use(cors({
   // exposedHeaders: ['Content-Length'], // Các header có thể được truy cập từ frontend
   credentials: true, // Nếu sử dụng cookie
   // optionsSuccessStatus: 200 // Mã trạng thái cho preflight requests
-}));
+};
+
+app.use(express.json());
+app.use(cookieParser());
+
+// Xử lý preflight trước mọi request
+app.options('*', cors(corsOptions));
+
+// Áp dụng CORS cho các request thực tế
+app.use(cors(corsOptions));
 
 if (process.env.NODE_ENV === 'production') {
   console.log('Running in production mode');

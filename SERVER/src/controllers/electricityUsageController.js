@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Device = require('../models/device');
 const ElectricityUsage = require('../models/electricityUsage');
+const User = require('../models/user');
 const moment = require('moment');
 
 // Truy vấn dữ liệu sử dụng điện của một người dùng và thiết bị theo ID và trả về tối đa 12 bản ghi gần nhất ~ 1h
@@ -150,33 +151,41 @@ const getElectricityUsageByDateRange = async (req, res) => {
   }
 };
 
-// Thêm dữ liệu sử dụng điện
+// Thêm dữ liệu sử dụng điện bởi thiết bị 8266
 const createElectricityUsage = async (req, res) => {
   try {
-    const { userId, deviceId, power, voltage, current, energy, extraData, voltageRange, currentRange, unitOfMeasurement } = req.body;
+    const { _id, busCode, deviceSerialNumber, power, voltage, current, frequency, power_cos, energy } = req.body;
 
-    const device = await Device.findOne({ deviceSerialNumber: deviceId });
+    const device = await Device.findOne({ deviceSerialNumber: deviceSerialNumber });
 
     if (!device) {
       return res.status(404).json({ message: 'Mã thiết bị chưa đúng.' });
     }
 
+    // (Tùy chọn) tìm userId từ busCode nếu cần
+    const user = await User.findOne({ busCode }); // Nếu bạn muốn lấy userId
+    if (!user) {
+      return errorResponse(res, 'Không tìm thấy người dùng với busCode.', 404);
+    }
+
     const newElectricityUsage = new ElectricityUsage({
-      userId,
+      userId: user._id,
       deviceId: device._id,
-      timestamp: new Date(),
-      power,
-      voltage,
-      current,
-      energy,
-      extraData,
-      voltageRange,
-      currentRange,
-      unitOfMeasurement,
+      timestamp: new Date().toISOString(),
+      power: Number(power),
+      voltage: Number(voltage),
+      current: Number(current),
+      frequency: Number(frequency),
+      energy: Number(energy),
+      extraData: {
+        busName,
+        power_cos: Number(power_cos),
+        rawId: _id
+      },
     });
 
     await newElectricityUsage.save();
-    return res.status(201).json({ message: 'Dữ liệu sử dụng điện đã được lưu thành công', data: newElectricityUsage });
+    return res.status(201).json({ message: 'ok', data: newElectricityUsage });
   } catch (error) {
     console.error('Lỗi khi lưu dữ liệu:', error);
     return res.status(500).json({ message: 'Lỗi server khi lưu dữ liệu.' });

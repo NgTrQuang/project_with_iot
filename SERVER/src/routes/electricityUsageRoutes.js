@@ -23,7 +23,7 @@ router.get('/summary/:userId', protect, getElectricityUsageSummary);
 router.get('/:userId/range', protect, getElectricityUsageByDateRange);
 
 // Thêm dữ liệu sử dụng điện
-router.post('/', protect, createElectricityUsage);
+router.post('/receive', protect, createElectricityUsage);
 
 // Xóa dữ liệu sử dụng điện
 router.delete('/:id', protect, deleteElectricityUsage);

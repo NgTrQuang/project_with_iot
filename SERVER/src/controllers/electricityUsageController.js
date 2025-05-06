@@ -154,7 +154,7 @@ const getElectricityUsageByDateRange = async (req, res) => {
 // Thêm dữ liệu sử dụng điện bởi thiết bị 8266
 const createElectricityUsage = async (req, res) => {
   try {
-    const { _id, busCode, deviceSerialNumber, power, voltage, current, frequency, power_cos, energy } = req.body;
+    const { _id, busCode, busName, deviceSerialNumber, power, voltage, current, frequency, power_cos, energy } = req.body;
 
     const device = await Device.findOne({ deviceSerialNumber: deviceSerialNumber });
 
@@ -163,9 +163,9 @@ const createElectricityUsage = async (req, res) => {
     }
 
     // (Tùy chọn) tìm userId từ busCode nếu cần
-    const user = await User.findOne({ busCode }); // Nếu bạn muốn lấy userId
+    const user = await User.findOne({ username: busCode }); // Nếu bạn muốn lấy userId
     if (!user) {
-      return errorResponse(res, 'Không tìm thấy người dùng với busCode.', 404);
+      return res.status(404).json({ message: 'Không tìm thấy người dùng với busCode.' });
     }
 
     const newElectricityUsage = new ElectricityUsage({

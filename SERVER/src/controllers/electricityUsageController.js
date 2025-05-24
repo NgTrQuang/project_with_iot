@@ -156,6 +156,14 @@ const createElectricityUsage = async (req, res) => {
   try {
     const { _id, busCode, busName, deviceSerialNumber, power, voltage, current, frequency, power_cos, energy } = req.body;
 
+    const { username } = req.params;
+
+    if (username === busCode) {
+      console.log('Đúng tài khoản tiếp tục thực hiện...');
+    } else {
+      console.log('Sai tài khoản...');
+      return res.status(404).json({ message: 'Chưa đúng tài khoản đăng nhập'});
+    }
     const device = await Device.findOne({ deviceSerialNumber: deviceSerialNumber });
 
     if (!device) {
